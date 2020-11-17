@@ -33,12 +33,6 @@ app.get("/api/notes/", function (req, res) {
   })
 });
 
-// Set our "*" route.
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "public/notes.html"));
-});
-
-
 // Express Routes - POST =================================================
 app.post("/api/notes/", function (req, res) {
   newNote = req.body;
@@ -79,6 +73,6 @@ app.delete("/api/notes/:id", function (req, res) {
 
 // Express Server =================================================
 // Start our server, listening on port 3001.
-app.listen(process.env.port || 3001, () => {
+app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`)
 });
