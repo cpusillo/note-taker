@@ -20,7 +20,7 @@ An application which allows a user to enter, save, and retrieve notes.
 * Navigate to https://localhost/3000 to view the app live
 
 ## Contribution Instructions
-*Not currently looking for contributions, but feel free to download and run it locally.
+*Not currently looking for contributions, but feel free to download and run it locally.*
 
 ### Supporting Images
 ![Image of Application](https://github.com/cpusillo/note-taker/blob/main/img/Screen%20Shot%202020-11-17%20at%2011.03.34%20AM.png)
