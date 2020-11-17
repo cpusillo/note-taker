@@ -32,6 +32,16 @@ const deleteNote = (id) => {
   });
 };
 
+const makeRandomID = () => {
+  let symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+  let randomStr = "note-";
+
+  for(var i = 0; i < 6; i++){
+    randomStr += symbols.charAt(Math.floor(Math.random() * symbols.length));
+  }
+  return randomStr;
+}
+
 // If there is an activeNote, display it, otherwise render empty inputs
 const renderActiveNote = () => {
   $saveNoteBtn.hide();
@@ -54,6 +64,7 @@ const handleNoteSave = function () {
   const newNote = {
     title: $noteTitle.val(),
     text: $noteText.val(),
+    id: makeRandomID()
   };
 
   saveNote(newNote).then(() => {
@@ -137,6 +148,8 @@ const renderNoteList = (notes) => {
 
 // Gets notes from the db and renders them to the sidebar
 const getAndRenderNotes = () => {
+  var returned = getNotes();
+  console.log(returned)
   return getNotes().then(renderNoteList);
 };
 
