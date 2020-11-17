@@ -12,5 +12,15 @@ An application which allows a user to enter, save, and retrieve notes.
 * Delete your old notes by clicking on the trash can next to the stored note.
 * Add a new note by entering a title and body-- click the save button to save!
 
-## Supporting Images
+## Local Installation & Usage Instructions
+* Clone the repo to your local disk.
+* From the cloned directory run `npm init -y`
+* Then pull in the necessary dependencies by running `npm install`
+* To run the application, run `node server.js`
+* Navigate to https://localhost/3000 to view the app live
+
+## Contribution Instructions
+*Not currently looking for contributions, but feel free to download and run it locally.
+
+### Supporting Images
 ![Image of Application](https://github.com/cpusillo/note-taker/blob/main/img/Screen%20Shot%202020-11-17%20at%2011.03.34%20AM.png)
