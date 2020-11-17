@@ -33,6 +33,11 @@ app.get("/api/notes/", function (req, res) {
   })
 });
 
+// Set our "star" route as a catch-all, redirect to index.html
+app.get("*", function(req, res) {
+  res.sendFile((__dirname + "/public/index.html"));
+});
+
 // Express Routes - POST =================================================
 app.post("/api/notes/", function (req, res) {
   newNote = req.body;
