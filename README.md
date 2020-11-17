@@ -13,6 +13,7 @@ An application which allows a user to enter, save, and retrieve notes.
 * Add a new note by entering a title and body-- click the save button to save!
 
 ## Local Installation & Usage Instructions
+This app was built using [Express.js](https://expressjs.com/)
 * Clone the repo to your local disk.
 * From the cloned directory run `npm init -y`
 * Then pull in the necessary dependencies by running `npm install`
