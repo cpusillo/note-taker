@@ -73,6 +73,6 @@ app.delete("/api/notes/:id", function (req, res) {
 
 // Express Server =================================================
 // Start our server, listening on port 3001.
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`)
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Started server`)
 }); 
