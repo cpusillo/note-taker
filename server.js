@@ -4,7 +4,7 @@ const fs = require("fs");
 
 // Setup our express specific variables
 const app = express()
-const port = process.env.port || 3001;
+const port = process.env.port || 3000;
 
 // Allow us to access our public folder and work with our files.
 app.use(express.static('public'))
